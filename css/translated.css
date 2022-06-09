@@ -1,0 +1,168 @@
+/*PARTIALS*/
+/*FOOTER*/
+.footer picture {
+  display: block;
+  text-align: center; }
+
+.footer img {
+  width: 100px; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #303134;
+  padding: 10px;
+  margin-top: 12px; }
+  .footer picture {
+    display: block;
+    text-align: center; }
+  .footer img {
+    width: 100px; }
+
+/*END FOOTER*/
+/*HEAD*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #303134;
+  padding: 10px; }
+  .header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px; }
+  .header ul {
+    list-style-type: none; }
+  .header .menu {
+    margin: 30px; }
+    .header .menu--underline:hover {
+      text-decoration: underline; }
+    .header .menu li {
+      display: inline; }
+      .header .menu li a {
+        color: #d1d1d1;
+        text-decoration: none;
+        border-style: none;
+        padding: 10px;
+        background-color: #1414144a; }
+
+.logo {
+  display: inline;
+  margin: 12px;
+  height: 90px;
+  width: 90px; }
+
+/*END HEAD*/
+/*PAGES*/
+/*CARDS*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-family: arial; }
+  .card__button:hover {
+    opacity: 0.7; }
+  .card__price {
+    color: grey;
+    font-size: 22px; }
+  .card__button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #b91b1b;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px; }
+
+/*GRID*/
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  margin: 20px 40px 20px 40px;
+  background-color: #333131; }
+
+.h3 {
+  color: #e3e4db; }
+
+.h2 {
+  color: #e3e4db; }
+
+/*END CARDS*/
+/*BIBLIOTECA*/
+.h3 {
+  color: #e3e4db; }
+
+.h2 {
+  color: #e3e4db; }
+
+/*END BIBLIOTECA*/
+/*LISTA DE DESEADOS*/
+.games {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 20px 20px 20px 20px;
+  background-color: #333131; }
+
+.h2 {
+  margin: 12px;
+  color: #e3e4db; }
+
+.h3 {
+  color: #e3e4db; }
+
+/*LISTA DE DESEADOS*/
+/*CARRITO*/
+.games {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 20px 20px 20px 20px;
+  background-color: #333131; }
+  .games img {
+    margin: 10px; }
+
+.buy {
+  display: block;
+  background-color: #494747;
+  margin: 20px 600px;
+  padding: 10px; }
+
+.h3 {
+  color: #e3e4db; }
+
+.h2 {
+  color: #e3e4db; }
+
+/*END CARRITO*/
+/*CONTACTO*/
+.label {
+  color: #e3e4db; }
+
+.h3 {
+  color: #e3e4db; }
+
+.h2 {
+  color: #e3e4db; }
+
+/*END CONTACTO*/
+/*MISC*/
+/*ANIMATIONS*/
+.games__images {
+  height: 300px;
+  width: 200px;
+  position: relative;
+  transition: all 300ms; }
+
+.games__images:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9); }
+
+/*END ANIMATIONS*/

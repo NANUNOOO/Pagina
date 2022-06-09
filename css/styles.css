@@ -11,155 +11,18 @@
 }
     /*HEADER DE LA PAGINA*/  
 
-
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    background-color: rgb(51, 49, 49);
-}
-header nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px;
-}
-ul{
-    list-style-type: none;
-}
-.menu li{
-    display: inline;
-} 
-.menu li a{ 
-    color: rgb(209, 209, 209);
-    text-decoration: none;
-    border-style: none;
-    padding: 10px;
-    background-color: #1414144a;
-}
-.menu{
-   
-    margin: 30px;
-    
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #303134;
-    padding:10px; 
-}
- 
     /* FIN DEL HEADER */  
  
-    /*CONTENIDO DE LA PAGINA*/  
 
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    background-color: rgb(51, 49, 49);
-}    
-.card { 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 200px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
 
-.card__price {
-  color: grey;
-  font-size: 22px;
-}
 
-.card__button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: rgb(32, 71, 16);
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
+    /*CONTENIDO DE LA PAGINA*/
+    
+    /*FIN DEL LA PAGINA*/
 
-.card button:hover {
-  opacity: 0.7;
-}
-.games_images{
-    height: 300px;
-    width: 300px;
-}  
-/* 
-.games{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    background-color: rgb(51, 49, 49); 
-}
-*/
-section h2{
-    display: flex;
-}
-.table{
-    margin: 50px;
-    border:solid;
-}
-form{
-    padding-top: 50px;
-    padding-left: 100px;
-}
-h2{
-    margin: 12px;
-}
-.logo{
-    display: inline;
-    margin: 12px;
-    height: 90px;
-    width: 90px;
-}
-.buy{
-    display: block;
-    background-color: rgb(73, 71, 71);
-    margin: 20px 600px;
-    padding: 10px;
-}
-h2{
-    color: rgb(209, 209, 209)
-}
-label{
-     color: rgb(209, 209, 209);
- }
+    
+
+
     /*FOOTER DE LA PAGINA*/
-
-.footer picture{
-    display: block;
-    text-align: center;
-}
-.footer img{
-    width: 100px;
-   
-}
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #303134;
-    padding: 10px;
-    margin-top: 12px;
-}
 
     /*FIN DEL FOOTER DE LA PAGINA*/

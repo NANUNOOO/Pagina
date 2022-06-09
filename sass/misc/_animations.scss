@@ -1,0 +1,12 @@
+/*ANIMATIONS*/
+.games__images{
+    height: 300px;
+    width: 200px;
+    position: relative;
+    transition: all 300ms;   
+} 
+.games__images:hover{
+    transform:  scale(1.15);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}    
+/*END ANIMATIONS*/ 
