@@ -1,0 +1,14 @@
+
+/*PARTIALS*/
+@import "./partials/footer";
+@import"./partials/header";
+
+/*PAGES*/
+@import"./pages/tienda";
+@import"./pages/biblioteca";
+@import"./pages/ListaDeDeseados";
+@import"./pages/carrito";
+@import"./pages/contacto";
+
+/*MISC*/  
+@import "./misc/animations";

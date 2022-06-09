@@ -1,0 +1,28 @@
+/*FOOTER*/ 
+.footer picture{
+    display: block;
+    text-align: center;
+}
+.footer img{
+    width: 100px;
+   
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #303134;
+    padding: 10px;
+    margin-top: 12px;
+
+    & picture{
+        display: block;
+        text-align: center;
+    }
+    & img{
+        width: 100px;
+       
+    }
+}
+
+/*END FOOTER*/ 

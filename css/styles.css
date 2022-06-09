@@ -1,4 +1,34 @@
 
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+ html{
+     font-size: 62.5%;
+ }
+.body{
+    background-color:#202124;
+}
+    /*HEADER DE LA PAGINA*/  
+
+    /* FIN DEL HEADER */  
+ 
+
+
+
+    /*CONTENIDO DE LA PAGINA*/
+    
+    /*FIN DEL LA PAGINA*/
+
+    
+
+
+    /*FOOTER DE LA PAGINA*/
+
+    /*FIN DEL FOOTER DE LA PAGINA*/
+
+
 *{
     margin: 0;
     padding: 0;
@@ -159,3 +189,4 @@ color:#e3e4db ;
 }
 
     /*FIN DEL FOOTER DE LA PAGINA*/
+
