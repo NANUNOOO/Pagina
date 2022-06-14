@@ -1,0 +1,21 @@
+@mixin colortext {
+    color: blueviolet;  
+}
+h1{
+    @include colortext;
+}
+h2{
+    @include colortext;    
+}
+h3{
+    @include colortext;    
+}
+h4{
+    @include colortext;    
+}
+h5{
+    @include colortext;    
+}
+h6{
+    @include colortext;    
+}
