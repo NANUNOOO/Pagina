@@ -88,20 +88,12 @@
   margin: 20px 40px 20px 40px;
   background-color: #333131; }
 
-.h3 {
-  color: #e3e4db; }
-
-.h2 {
-  color: #e3e4db; }
+.encabezado {
+  padding: 40px;
+  text-align: center; }
 
 /*END CARDS*/
 /*BIBLIOTECA*/
-.h3 {
-  color: #e3e4db; }
-
-.h2 {
-  color: #e3e4db; }
-
 /*END BIBLIOTECA*/
 /*LISTA DE DESEADOS*/
 .games {
@@ -110,13 +102,6 @@
   justify-content: start;
   margin: 20px 20px 20px 20px;
   background-color: #333131; }
-
-.h2 {
-  margin: 12px;
-  color: #e3e4db; }
-
-.h3 {
-  color: #e3e4db; }
 
 /*LISTA DE DESEADOS*/
 /*CARRITO*/
@@ -135,21 +120,9 @@
   margin: 20px 600px;
   padding: 10px; }
 
-.h3 {
-  color: #e3e4db; }
-
-.h2 {
-  color: #e3e4db; }
-
 /*END CARRITO*/
 /*CONTACTO*/
 .label {
-  color: #e3e4db; }
-
-.h3 {
-  color: #e3e4db; }
-
-.h2 {
   color: #e3e4db; }
 
 /*END CONTACTO*/
@@ -166,3 +139,20 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9); }
 
 /*END ANIMATIONS*/
+h1 {
+  color: blueviolet; }
+
+h2 {
+  color: blueviolet; }
+
+h3 {
+  color: blueviolet; }
+
+h4 {
+  color: blueviolet; }
+
+h5 {
+  color: blueviolet; }
+
+h6 {
+  color: blueviolet; }
