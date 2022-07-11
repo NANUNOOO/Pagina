@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href="../img/logo2.svg">
         <link rel="stylesheet" href="./css/translated.css">
         <link rel="stylesheet" href="../css/translated.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body class="body">  
         <!--HEADER DE LA PAGINA-->    
@@ -21,60 +22,82 @@
                 <article>
                     <ul class="menu">       
                         <li class="menu--underline">    
-                            <a href="../index.html">Tienda</a>               
+                            <a href="../index.html">TIENDA</a>               
                         </li>            
                         <li class="menu--underline">    
-                            <a href="./biblioteca.html">Biblioteca</a>               
+                            <a href="./biblioteca.html">BIBLIOTECA</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a href="./ListaDeDeseados.html">Lista de deseados</a>               
+                            <a href="./ListaDeDeseados.html">LISTA DE DESEADOS</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a href="./carrito.html">Carrito</a>               
+                            <a href="./carrito.html">CARRITO</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a  href="./contacto.html">Contacto</a>               
+                            <a  href="./contacto.html">CONTACTO</a>               
                     </li>   
                     </ul>
-                </article>
-                <article>
-                    <nav>
-                        <label for="busqueda"> </label>  <input type="search"> 
-                    </nav>
                 </article>
             </section>
         </header>  
         <!--FIN DEL HEADER DE LA PAGINA-->
         <form>
-            <ul style="list-style-type: none;">
+            <ul class="form" style="list-style-type: none;">
     
                 <li class="label">
-                    <label for="nombre"> Nombre: </label>  <input type="text" id="nombre"><br>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+                        <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Escribe tu Nombre">
+                      </div<br>
                 </li>
                 <li class="label">
-                    <label for="apellido"> Apellido: </label> <input type="text" id="apellido" > <br>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Apellido:</label>
+                        <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Escribe tu Apellido">
+                      </div> <br>
                 </li>
                 <li class="label">
-                    <label for="mail">Mail: </label> <input type="text"id="mail"><br>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                        <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Escribe tu Email">
+                      </div<br>
                 </li>
                 <li class="label">
-                    <label for="estadocivil">Estado Civil: </label>
-                    <select id="estados" name="estados">
-                        <option value="casado">casado</option>
-                        <option value="soltero">soltero</option>
-                    </select> <br>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="30" cols="200"></textarea>
+                    </div><br>
                 </li>
-                <li class="label">
-                    <label for="nl">Deseas recibir el Newsletter: </label> <input type="checkbox"id="nl"><br>
+                <li  class="">
+                    <input type="submit" class="btn btn-secondary btn-lg btn btn-danger" value="Enviar">
+                    <input type="reset"class="btn btn-secondary btn-lg btn btn-danger" value="Limpiar formulario"><br>
                 </li>
-                <li class="label">
-                    <textarea id="comment" cols="16" rows="8" ></textarea><br>
-                </li>
-                <li  class="label">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar formulario"><br>
-                </li>
-            </ul>   
+            </ul>
+            <article id="form">
+                <h2 class="title">Tambien nos puedes Contactar por</h2><br>
+                <ul>
+                    <li class="label">
+                        <h3 class="text__h4 form__links">Instagram:</h3><br>
+                        <a href="https://www.instagram.com">https://www.instagram.com</a><br>
+                    </il>
+                    <li class="label">
+                        <h3 class="text__h4 form__links">Facebook:</h3><br>
+                        <a href="https://www.facebook.com">https://www.facebook.com</a><br>
+                    </il>
+                    <li class="label">
+                        <h3 class="text__h4 form__links">Twitter:</h3><br>
+                        <a href="https://twitter.com">https://twitter.com</a><br>
+                    </il>
+                    <li class="label">
+                        <h3 class="text__h4 form__links">Tel:</h3><br>
+                        <p>+54 3333-3333</p><br>
+                    </il>
+                    <li class="label">
+                        <h3 class="text__h4 form__links">Mail:</h3><br>
+                        <p>pepe@ejemplo.com</p><br>
+                    </il>
+                </ul>
+        </article>   
         </form>
         <!--FOOTER DE LA PAGINA-->   
         <footer class="footer">        

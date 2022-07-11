@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href="../img/logo2.svg">
         <link rel="stylesheet" href="./css/translated.css">
         <link rel="stylesheet" href="../css/translated.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body class="body"> 
         <!--HEADER DE LA PAGINA-->    
@@ -18,28 +19,32 @@
                 <article>
                     <img class="logo" src="../img/logo.svg" alt="">
                 </article>
-                <article>
+                <article class="ocultar">
                     <ul class="menu">       
                         <li class="menu--underline">    
-                            <a href="../index.html">Tienda</a>               
+                            <a href="../index.html">TIENDA</a>               
                         </li>            
                         <li class="menu--underline">    
-                            <a href="./biblioteca.html">Biblioteca</a>               
+                            <a href="./biblioteca.html">BIBLIOTECA</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a href="./ListaDeDeseados.html">Lista de deseados</a>               
+                            <a href="./ListaDeDeseados.html">LISTA DE DESEADOS</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a href="./carrito.html">Carrito</a>               
+                            <a href="./carrito.html">CARRITO</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a  href="./contacto.html">Contacto</a>               
+                            <a  href="./contacto.html">CONTACTO</a>               
                     </li>   
                     </ul>
                 </article>
                 <article>
-                    <nav>
-                        <label for="busqueda"> </label>  <input type="search"> 
+                    <div class="container-fluid w-100 ocultar">
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                        </form>
+                      </div>
                     </nav>
                 </article>
             </section>
@@ -47,16 +52,73 @@
         <!--FIN DEL HEADER DE LA PAGINA-->
         
         <!--CONTENIDO DE LA PAGINA-->
-        <section class="games">
-            <img class="games__images" src="./../img/alyx.jpg" alt="Imagen">        
-            <img class="games__images" src="./../img/battlefield1.jpg" alt="Imagen">
-            <img class="games__images" src="./../img/Battlefield3.jpg" alt="Imagen"><br>
-            <img class="games__images" src="./../img/HalfLifeBS.jpg" alt="Imagen"><br>
-        </section> 
-        <section class="buy">
-            <p>1.530 ARS</p>
-            <button>Comprar</button>
-            
+        <section>
+            <form>
+                <ul class="form__carrito" style="list-style-type: none;">
+        
+                    <li class="label__carrito">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                          </div<br>
+                    </li>
+                    <li class="label__carrito">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                          </div> <br>
+                    </li>
+                    <li class="label__carrito">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Numero de tarjeta</label>
+                            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                          </div<br>
+                    </li>
+                    <li class="label__carrito">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Dirección de facturación</label>
+                            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                          </div<br>
+                    </li>
+                    <li class="label__carrito">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Dirección de facturación (segunda línea)</label>
+                            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                          </div> <br>
+                    </li>
+                    <li class="label__carrito">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Localidad</label>
+                            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                          </div<br>
+                    </li>
+                    <li class="label__carrito">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Numero de Telefono</label>
+                            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+                          </div<br>
+                    </li>
+                    <li class="label__carrito">
+                        <br><p>Counte Strike 16  + ARS$ 19.99</p>
+                    </li>
+                    <li class="label__carrito">
+                        <p>Fallout 3   + ARS$ 19.99</p>
+                    </li>
+                    <li class="label__carrito">
+                        <p>sea of Thieves   + ARS$ 19.99</p>
+                    </li>
+                    <li class="label__carrito">
+                        <p>half life blue Shift   + ARS$ 19.99</p><br>
+                    </li>
+                    <li class="label__carrito">
+                        <p>TOTAL A PAGAR  + ARS$ 79.96</p>
+                    </li>
+                    <li>
+                        <input type="submit" class="btn btn-secondary btn-lg btn btn-danger" value="Comprar">
+                        <input type="reset"class="btn btn-secondary btn-lg btn btn-danger" value="Limpiar formulario"><br>
+                    </li>
+                </ul>
+            </form>
         </section>
         <!--FIN DEL CONTENIDO DE LA PAGINA-->
         

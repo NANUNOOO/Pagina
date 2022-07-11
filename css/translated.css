@@ -1,5 +1,7 @@
 /*PARTIALS*/
 /*FOOTER*/
+
+
 .footer picture {
   display: block;
   text-align: center; }
@@ -32,13 +34,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 30px; }
+    margin: 20px; 
+    width: 200px;
+  }
+ .header article{
+    margin-top: auto;
+    margin-bottom: auto;}
+
   .header ul {
-    list-style-type: none; }
+    list-style-type: none; 
+    font-size: medium;}
   .header .menu {
     margin: 30px; }
-    .header .menu--underline:hover {
-      text-decoration: underline; }
+    .menu--underline:hover {
+      text-decoration-line: underline;}
     .header .menu li {
       display: inline; }
       .header .menu li a {
@@ -46,7 +55,8 @@
         text-decoration: none;
         border-style: none;
         padding: 10px;
-        background-color: #1414144a; }
+        background-color: #1414144a; 
+      }
 
 .logo {
   display: inline;
@@ -57,16 +67,20 @@
 /*END HEAD*/
 /*PAGES*/
 /*CARDS*/
-.card {
+.card_games {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 200px;
   margin: auto;
   text-align: center;
-  font-family: arial; }
+  font-family: arial;
+  color: #ffffff; 
+  background-color: #333131;
+  position: relative;
+  transition: all 300ms;}
   .card__button:hover {
     opacity: 0.7; }
   .card__price {
-    color: grey;
+    color: #e3e4db;
     font-size: 22px; }
   .card__button {
     border: none;
@@ -78,15 +92,24 @@
     cursor: pointer;
     width: 100%;
     font-size: 18px; }
-
+  .card__game__name{
+    margin-top: 2px;}
+.card_games:hover{
+  transform: scale(1.17);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9); }
+.text--line-through{
+  text-decoration: line-through;
+  text-decoration-color: #b91b1b;
+  color: rgb(114, 114, 114); }
 /*GRID*/
-.grid {
+.grid_local {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
   padding: 10px;
   margin: 20px 40px 20px 40px;
-  background-color: #333131; }
+  background-color: #333131; 
+  border-radius: 5px; }
 
 .encabezado {
   padding: 40px;
@@ -94,65 +117,213 @@
 
 /*END CARDS*/
 /*BIBLIOTECA*/
+.flex__container{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+.backgraund__games{
+  margin: 50px 100px 50px 100px;
+  background: #333131;
+  border-radius: 7px; 
+  }
+  .subtitle{
+    padding: 10px;
+    background-color: #ca1818;
+  }
+  .subtitle h2{
+    color: #e3e4db;
+    margin-left: 180px;
+  }
+
+.card__biblioteca{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: 20px;
+  text-align: center;
+  font-family: arial;
+  color: #ffffff; 
+  background-color: #333131;
+  position: relative;
+  transition: all 300ms;
+  font-size: 14px; }
+.card__biblioteca:hover{
+  transform: scale(1.17);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9); }
+.nav__biblioteca{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  flex-wrap: wrap;
+  align-content: space-around; }
+#form{
+text-align: center; }
+.flex__title{
+  display: flex;
+}
+
 /*END BIBLIOTECA*/
 /*LISTA DE DESEADOS*/
+
+
+.card__img{
+  width: 100px;
+  height: 300px;
+}
+.card__img img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .games {
   display: flex;
   flex-direction: row;
   justify-content: start;
   margin: 20px 20px 20px 20px;
-  background-color: #333131; }
-
+  background-color: #333131; 
+}
+.card__deseados{
+  margin: 20px 40px 20px 40px;
+  align-content: center;
+  padding: 10px;
+}
 /*LISTA DE DESEADOS*/
 /*CARRITO*/
-.games {
+
+.label__carrito{
+  color: #e3e4db;
+  font-size: 20px;
+  list-style-type: none; }
+.form__carrito{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  margin: 100px;
+  list-style-type: none;}
+
+/*.games {
   display: flex;
   flex-direction: row;
   justify-content: start;
   margin: 20px 20px 20px 20px;
   background-color: #333131; }
   .games img {
-    margin: 10px; }
-
-.buy {
-  display: block;
-  background-color: #494747;
-  margin: 20px 600px;
-  padding: 10px; }
+    margin: 10px; }*/
 
 /*END CARRITO*/
 /*CONTACTO*/
 .label {
-  color: #e3e4db; }
+  color: #e3e4db;
+  font-size: 20px;
+  list-style-type: none; }
+.form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin: 100px; 
+  list-style-type: none; }
 
+.form__links {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  margin: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  list-style-type: none;
+  font-size: 30px; } 
 /*END CONTACTO*/
 /*MISC*/
 /*ANIMATIONS*/
 .games__images {
   height: 300px;
-  width: 200px;
-  position: relative;
-  transition: all 300ms; }
-
-.games__images:hover {
-  transform: scale(1.15);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9); }
+  width: 200px; }
 
 /*END ANIMATIONS*/
-h1 {
+.text__h1 {
   color: #e3e4db; }
 
-h2 {
+.text__h2 {
   color: #e3e4db; }
 
-h3 {
+.text__h3 {
   color: #e3e4db; }
 
-h4 {
+.text__h4 {
   color: #e3e4db; }
 
-h5 {
+.text__h5 {
   color: #e3e4db; }
 
-h6 {
+.text__h6 {
   color: #e3e4db; }
+
+.ocultar{
+  display: none;
+}
+.flex__galery{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 400px;
+  margin-right: 400px; 
+  align-items: center;}
+  
+.flex__galery img{
+  border-radius: 12px;
+}
+.flex__galery__small{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr );
+  padding: 10px;
+  margin: 20px 40px 20px 40px;
+  background-color: #333131;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  color: #e3e4db;
+}
+.button__galery_small{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #b91b1b;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  font-size: 18px;
+ 
+}
+.margin__galery{
+  margin: auto;
+}
+.galery__img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.title{
+  display: flex;
+  color: white;
+  margin-top: 20px;
+  justify-content: center; }
+
+.menu__responsive{
+  display: none;
+}
+
+
+    @media (min-width: 768px) {
+     .ocultar{
+      display: grid;
+    }
+  }
+  
+  @media (min-width: 768px) {
+  .menu__responsive{
+    display: flex;
+  }
+}
