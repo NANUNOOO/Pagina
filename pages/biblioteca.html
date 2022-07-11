@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href="../img/logo2.svg">
         <link rel="stylesheet" href="./css/translated.css">
         <link rel="stylesheet" href="../css/translated.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body class="body"> 
         <!--HEADER DE LA PAGINA-->    
@@ -18,28 +19,33 @@
                 <article>
                     <img class="logo" src="../img/logo.svg" alt="">
                 </article>
-                <article>
+                <article class="ocultar">
                     <ul class="menu">       
                         <li  class="menu--underline">    
-                            <a href="../index.html">Tienda</a>               
+                            <a href="../index.html">TIENDA</a>               
                         </li>            
                         <li class="menu--underline">    
-                            <a href="./biblioteca.html">Biblioteca</a>               
+                            <a href="./biblioteca.html">BIBLIOTECA</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a href="./ListaDeDeseados.html">Lista de deseados</a>               
+                            <a href="./ListaDeDeseados.html">LISTA DE DESEADOS</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a href="./carrito.html">Carrito</a>               
+                            <a href="./carrito.html">CARRITO</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a  href="./contacto.html">Contacto</a>               
-                    </li>   
+                            <a  href="./contacto.html">CONTACTO</a>               
+                        </li>   
                     </ul>
                 </article>
-                <article>
-                    <nav>
-                        <label for="busqueda"> </label>  <input type="search"> 
+                <article class="ocultar">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-lg-1" type="search" placeholder="" aria-label="">
+                            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                          </form>
+                        </div>
                     </nav>
                 </article>
             </section>
@@ -47,23 +53,86 @@
         <!--FIN DEL HEADER DE LA PAGINA-->
 
         <!--CONTENIDO DE LA PAGINA-->
-        <section class="grid">
-            <article class="card">
-                <img class="games__images" src="../img/alyx.jpg" alt="Imagen" style="width:100%">
-                <h3 class="h3">Half Life Alyx</h3>     
+        <article class="title">
+            <h2>TUS JUEGOS</h2>
+        </article>
+        
+        <section class="backgraund__games">
+            <div class="subtitle">
+                <h2>ACCION</h2>
+            </div>
+            <article class="flex__container">
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/alyx.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Half Life Alyx</h3>     
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/battlefield1.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Battlefield 1</h3>   
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/Battlefield3.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Battlefield 3</h3>  
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/HalfLifeBS.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Half Life Blue Shift</h3>    
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/alyx.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Half Life Alyx</h3>     
+                </article>
             </article>
-            <article class="card">
-                <img class="games__images" src="../img/battlefield1.jpg" alt="Imagen" style="width:100%">
-                <h3 class="h3">Battlefield 1</h3>   
+            <div class="subtitle">
+                <h2>AVENTURA</h2>
+            </div>
+            <article class="flex__container">
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/alyx.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Half Life Alyx</h3>     
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/battlefield1.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Battlefield 1</h3>   
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/Battlefield3.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Battlefield 3</h3>  
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/HalfLifeBS.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Half Life Blue Shift</h3>    
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/alyx.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Half Life Alyx</h3>     
+                </article>
             </article>
-            <article class="card">
-                <img class="games__images" src="../img/Battlefield3.jpg" alt="Imagen" style="width:100%">
-                <h3 class="h3">Battlefield 3</h3>  
-            </article>
-            <article class="card">
-                <img class="games__images" src="../img/HalfLifeBS.jpg" alt="Imagen" style="width:100%">
-                <h3 class="h3">Half Life Blue Shift</h3>    
-            </article>     
+            <div class="subtitle">
+            <h2>RPG</h2>
+            </div>
+            <article class="flex__container">
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/alyx.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Half Life Alyx</h3>     
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/battlefield1.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Battlefield 1</h3>   
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/Battlefield3.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Battlefield 3</h3>  
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/HalfLifeBS.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Half Life Blue Shift</h3>    
+                </article>
+                <article class="card__biblioteca">
+                    <img class="games__images" src="../img/alyx.jpg" alt="Imagen" style="width:100%">
+                    <h3 class="h3">Half Life Alyx</h3>     
+                </article>
+            </article>  
         </section>
         
         <!--FIN DEL CONTENIDO DE LA PAGINA-->

@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href="../img/logo2.svg">
         <link rel="stylesheet" href="./css/translated.css">
         <link rel="stylesheet" href="../css/translated.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body class="body"> 
         <!--HEADER DE LA PAGINA-->    
@@ -18,93 +19,110 @@
                 <article>
                     <img class="logo" src="../img/logo.svg" alt="">
                 </article>
-                <article>
+                <article class="ocultar">
                     <ul class="menu">       
                         <li class="menu--underline">    
-                            <a href="../index.html">Tienda</a>               
+                            <a href="../index.html">TIENDA</a>               
                         </li>            
                         <li class="menu--underline">    
-                            <a href="./biblioteca.html">Biblioteca</a>               
+                            <a href="./biblioteca.html">BIBLIOTECA</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a href="./ListaDeDeseados.html">Lista de deseados</a>               
+                            <a href="./ListaDeDeseados.html">LISTA DE DESEADOS</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a href="./carrito.html">Carrito</a>               
+                            <a href="./carrito.html">CARRITO</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a  href="./contacto.html">Contacto</a>               
+                            <a  href="./contacto.html">CONTACTO</a>               
                     </li>   
                     </ul>
                 </article>
-                <article>
-                    <nav>
-                        <label for="busqueda"> </label>  <input type="search"> 
+                <article class="ocultar">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-lg-1" type="search" placeholder="" aria-label="">
+                            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                          </form>
+                        </div>
                     </nav>
                 </article>
             </section>
         </header> 
         <!--FIN DEL HEADER DE LA PAGINA-->
          <!--CONTENIDO DE LA PAGINA-->
-            <section class="games">
-                <article style="background-color: rgb(51, 49, 49);">
-                    <table>
-                        <tr>
-                            <td>
-                                <img class="games__images" src="../img/alyx.jpg" alt="Imagen">
-                            </td>
-                            <td>
-                                <h2 class="h2">Life Alyx</h2> 
-                            </td>
-                        </tr>
-                        
-                    </table>
-                </article>
+         <section>
+            <div class="card mb-3 card__deseados" style="max: w -20px;--bs-card-bg: #4b4b4b;">
+                <div class="row g-0">
+                <div class="col-2  card__img">
+                    <img src="../img/Fallout3.jpg" class="img-fluid rounded-start c" style="padding:20px ;" alt="Sea Of Thieves">
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 4rem;">Swa Of Thieves</h5>
+                        <h3 class="card-text card__price text--line-through">ARS$ 19.99</h3>
+                        <h3>ARS$ 10.99</h3>
+                        <div class="d-flex flex-row-reverse">
+                            <button type="button" class="btn btn-danger btn-lg card__button" style="margin-top:100px;">COMPRAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <section>
+                <div class="card mb-3 card__deseados" style="max: w -20px;--bs-card-bg: #4b4b4b;">
+                    <div class="row g-0">
+                    <div class="col-2 card__img">
+                        <img src="../img/SeaOfThieves.jpg" class="img-fluid rounded-start c" style="padding:20px ;" alt="Sea Of Thieves">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 4rem;">Sea Of Thieves</h5>
+                            <h3 class="card-text card__price text--line-through">ARS$ 19.99</h3>
+                            <h3>ARS$ 10.99</h3>
+                            <div class="d-flex flex-row-reverse">
+                                <button type="button" class="btn btn-danger btn-lg card__button" style="margin-top:100px;">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="games">
-                <article style="background-color: rgb(51, 49, 49);">
-                    <table>
-                        <tr>
-                            <td>
-                                <img class="games__images" src="../img/battlefield1.jpg" alt="Imagen">
-                            </td>
-                            <td>
-                                <h2 class="h2">Battlefield 1</h2> 
-                            </td>
-                        </tr>
-                        
-                    </table>
-                </article>
+            <section>
+                <div class="card mb-3 card__deseados" style="max: w -70px; --bs-card-bg: #4b4b4b;">
+                    <div class="row g-0">
+                    <div class="col-2 card__img">
+                        <img src="../img/CounteStrike16.jpg" class="img-fluid rounded-start" style="padding:20px ;" alt="CounteStrike">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 4rem;">CounteStrike 1.6</h5>
+                            <h3 class="card-text card__price text--line-through">ARS$ 19.99</h3>
+                            <h3>ARS$ 10.99</h3>
+                            <div class="d-flex flex-row-reverse">
+                                <button type="button" class="btn btn-danger btn-lg card__button" style="margin-top:100px;">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="games">
-                <article style="background-color: rgb(51, 49, 49);">
-                    <table>
-                        <tr>
-                            <td>
-                                <img class="games__images" src="../img/Battlefield3.jpg" alt="Imagen">
-                            </td>
-                            <td>
-                                <h2 class="h2">Battlefield 3</h2> 
-                            </td>
-                        </tr>
-                        
-                    </table>
-                </article>
-            </section>
-            <section class="games">
-                <article style="background-color: rgb(51, 49, 49);">
-                    <table>
-                        <tr>
-                            <td>
-                                <img class="games__images" src="../img/HalfLifeBS.jpg" alt="Imagen">
-                            </td>
-                            <td>
-                                <h2 class="h2">Half Life Blue Shield</h2> 
-                            </td>
-                        </tr>
-                        
-                    </table>
-                </article>
+            <section>
+                <div class="card mb-3 card__deseados" style="max: w -70px; --bs-card-bg: #4b4b4b;">
+                    <div class="row g-0">
+                    <div class="col-2 card__img">
+                        <img src="../img/DarkSouls3.jpg" class="img-fluid rounded-start"style="padding:20px ;" alt="Dark Souls">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 4rem;">Dark Souls</h5>
+                            <h3 class="card-text card__price text--line-through">ARS$ 19.99</h3>
+                            <h3>ARS$ 10.99</h3>
+                            <div class="d-flex flex-row-reverse">
+                                <button type="button" class="btn btn-danger btn-lg card__button" style="margin-top:100px;">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
                         
         <!--FIN DEL CONTENIDO DE LA PAGINA-->

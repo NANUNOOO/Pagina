@@ -12,36 +12,42 @@
         <link rel="stylesheet" href="./css/translated.css">
         <link rel="shortcut icon" href="./img/logo2.svg">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body class="body"> 
         <!--HEADER DE LA PAGINA--> 
         <header class="header">
             <section class="header">
-                <article id="logo">
+                <article>
                     <img class="logo" src="./img/logo.svg" alt="">
                 </article>
-                <article class="menu">
+                <article class="menu ocultar">
                     <ul class="menu">       
                         <li class="menu--underline">    
-                            <a href="./index.html">Tienda</a>               
+                            <a href="./index.html">TIENDA</a>               
                         </li>            
                         <li class="menu--underline">    
-                            <a href="./pages/biblioteca.html">Biblioteca</a>               
+                            <a href="./pages/biblioteca.html">BIBLIOTECA</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a href="./pages/ListaDeDeseados.html">Lista de deseados</a>               
+                            <a href="./pages/ListaDeDeseados.html">LISTA DE DESEADOS</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a href="./pages/carrito.html">Carrito</a>               
+                            <a href="./pages/carrito.html">CARRITO</a>               
                         </li>   
                         <li class="menu--underline">    
-                            <a  href="./pages/contacto.html">Contacto</a>               
+                            <a  href="./pages/contacto.html">CONTACTO</a>               
                         </li>   
                     </ul>
                 </article>
-                <article>
-                    <nav>
-                        <label for="busqueda"> </label>  <input type="search"> 
+                <article class="ocultar">
+                    <nav class="navbar ocultar">
+                        <div class="container-fluid">
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-lg-1" type="search" placeholder="" aria-label="">
+                            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                          </form>
+                        </div>
                     </nav>
                 </article>
             </section>
@@ -49,72 +55,164 @@
         <!--FIN DEL HEADER DE LA PAGINA-->
 
         <!--CONTENIDO DE LA PAGINA-->
-        <h1 class="encabezado"> TIENDA </h1>
-        <section class="grid">
-            <article class="card">
-                <img class="games__images" src="./img/alyx.jpg" alt="Imagen" style="width:100%">
-                <div>
+        
+        <!--GALERIA-->
+        <section class="ocultar">
+            <article class="ocultar">
+                <div id="carouselExampleInterval" class=" flex__galery carousel slide" data-bs-ride="carousel ">
+                    <article class="title">
+                        <h2>GRAN OPORTUNIDAD</h2>
+                    </article>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000"   >
+                        <img src="./img/Component13.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+        </section>
+        <!--TARJETAS-->
+        <article class="backgraund__games">
+            <div class="subtitle">
+                <h2>ACCION</h2>
+            </div>
+        </article>
+
+        <section class="grid_local">
+            <article class="card_games">
+                <img class="games__images" src="./img/alyx.jpg" alt="Imagen" style="width:auto height: auto;">
+                <div class="card__game__name">
                     <h3 class="h3">Half Life Alyx</h3>
                 </div>
                 <p class="card__price">ARS$ 19.99</p>
                 <br>
                 <p><button class="card__button">COMPRAR</button></p>
             </article>
-            <article class="card">
-                <img class="games__images" src="./img/battlefield1.jpg" alt="Imagen" style="width:100%">
-                <div>
+            <article class="card_games">
+                <img class="games__images" src="./img/battlefield1.jpg" alt="Imagen" style="width:auto height: auto;">
+                <div class="card__game__name">
                     <h3 class="h3">Battlefield 1</h3>
                 </div>
                 <p class="card__price">ARS$ 19.99</p><br>
                 <p><button class="card__button">COMPRAR</button></p>
             </article>
-            <article class="card">
-                <img class="games__images" src="./img/Battlefield3.jpg" alt="Imagen" style="width:100%">
-                <div>
+            <article class="card_games">
+                <img class="games__images" src="./img/Battlefield3.jpg" alt="Imagen" style="width:auto height: auto;">
+                <div class="card__game__name">
                     <h3 class="h3">Battlefield 3</h3>
                 </div>
                 <p class="card__price">ARS$ 19.999</p><br>
                 <p><button class="card__button">COMPRAR</button></p>                                
             </article>
-             <article class="card">
-                <img class="games__images" src="./img/HalfLifeBS.jpg"  alt="Imagen" style="width:100%">
-                <div>
+             <article class="card_games">
+                <img class="games__images" src="./img/HalfLifeBS.jpg"  alt="Imagen" style="width:auto height: auto;">
+                <div class="card__game__name">
                     <h3 class="h3">Half Life Blue Shift</h3>
                 </div>
                 <p class="card__price">ARS$ 19.99</p><br>
                 <p><button class="card__button">COMPRAR</button></p>
             </article>                      
         </section>
-        <section class="grid">
-            <article class="card">
-                <img class="games__images" src="./img/SeaOfThieves.jpg" alt="Imagen" style="width:100%">
-                <div>
+        <article class="backgraund__games">
+            <div class="subtitle">
+                <h2>OFERTAS</h2>
+            </div>
+        </article>
+        <section class="grid_local">
+            <article class="card_games">
+                <img class="games__images" src="./img/SeaOfThieves.jpg" alt="Imagen" style="width:auto height: auto;">
+                <div class="card__game__name">
                     <h3 class="h3">Sea Of Thieves</h3>
                 </div>
-                <p class="card__price">ARS$ 19.99</p><br>
-                <p><button class="card__button">COMPRAR</button></p>
-            </article>
-            <article class="card">
-                <img class="games__images" src="./img/CounteStrike16.jpg" alt="Imagen" style="width:100%">
                 <div>
-                    <h3 class="h3">Half Life Alyx</h3>
-                </div>
-                <p class="card__price">ARS$ 19.99</p><br>
+                    <h3 class="card__price text--line-through">ARS$ 19.99</h3>
+                    <h3>ARS$ 10.99</h3>
+                </div>   
                 <p><button class="card__button">COMPRAR</button></p>
             </article>
-            <article class="card">
-                <img class="games__images" src="./img/Fallout3.jpg" alt="Imagen" style="width:100%">
-                <div>    
-                    <h3 class="h3">Half Life Alyx</h3>
+            <article class="card_games">
+                <img class="games__images" src="./img/CounteStrike16.jpg" alt="Imagen" style="width:auto height: auto;">
+                <div class="card__game__name">
+                    <h3 class="h3">Counter Strike</h3>
                 </div>
-                <p class="card__price">ARS$ 19.99</p><br>
+                <div>
+                    <h3 class="card__price text--line-through ">ARS$ 19.99</h3>
+                    <h3>ARS$ 10.99</h3>
+                </div>   
                 <p><button class="card__button">COMPRAR</button></p>
             </article>
-            <article class="card">
-                <img class="games__images" src="./img/DarkSouls3.jpg" alt="Imagen" style="width:100%">
-                <h3 class="h3">Half Life Alyx</h3>
-                <p class="card__price">ARS$ 19.99</p><br>
+            <article class="card_games">
+                <img class="games__images" src="./img/Fallout3.jpg" alt="Imagen" style="width:auto height: auto;">
+                <div class="card__game__name">    
+                    <h3 class="h3">Fallout 3</h3>
+                </div>
+                <div>
+                    <h3 class="card__price text--line-through">ARS$ 19.99</h3>
+                    <h3>ARS$ 10.99</h3>
+                </div>   
                 <p><button class="card__button">COMPRAR</button></p>
+            </article>
+            <article class="card_games">
+                <img class="games__images" src="./img/DarkSouls3.jpg" alt="Imagen" style="width:auto height: auto;">
+                <div class="card__game__name">
+                    <h3 class="h3">Dark Souls 3</h3>
+                </div>
+                <div>
+                    <h3 class="card__price text--line-through">ARS$ 19.99</h3>
+                    <h3>ARS$ 10.99</h3>
+                </div>   
+                <p><button class="card__button">COMPRAR</button></p>
+            </article>
+        </section>
+        <!--SEGUNDA GALERIA-->
+        <section class="flex__galery__small ocultar">
+            <article>
+                <div>
+                    <p>
+                        !Compra nuestros nuestros Productos<br>
+                        para colaborar con la pagina¡
+                    </p>
+                    <button class="button__galery_small"> COMPRAR</button>
+                </div>
+            </article>
+            <article>
+                <div id="carouselExampleInterval " class="carousel slide w-50 h-50 margin__galery" data-bs-ride="carousel ">
+                    <article class="title">
+                    </article>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000"   >
+                        <img src="./img/producto1.jpg" class="d-block galery__img" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block" alt="...">
+                    </div>
+                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </article>
         </section>
         <!--FIN DEL CONTENIDO DE LA PAGINA-->
